@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Generator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    Image Generator
+  </header>
+  <div class="container">
+    <div class="button-container">
+      <button id="generateButton">Generate</button>
+    </div>
+    <div class="images-grid" id="imagesGrid">
+      <!-- Images will be appended here via infinite scrolling -->
+    </div>
+  </div>
+  
+  <!-- Popup overlay -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <!-- Popup header with download button -->
+      <div class="popup-header">
+        <button class="popup-btn" id="downloadBtn">&#8681;</button>
+      </div>
+      <!-- Popup image -->
+      <img id="popupImage" src="" alt="Full Image">
+      <!-- Carousel buttons positioned outside the image -->
+      <button class="carousel-btn" id="prevBtn">&#10094;</button>
+      <button class="carousel-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>

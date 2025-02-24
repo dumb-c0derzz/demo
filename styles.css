@@ -1,0 +1,120 @@
+/* Page styling */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background: #4a90e2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .button-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  button#generateButton {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button#generateButton:hover {
+    background-color: #357ab8;
+  }
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  .images-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  .images-grid img:hover {
+    transform: scale(1.05);
+  }
+  /* Popup overlay styling */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .popup-content {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Popup header: Only download button remains */
+  .popup-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  /* Download button styling: bright text, transparent background */
+  .popup-btn {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  /* Carousel buttons styling: small circles outside the image */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #4a90e2;
+    font-size: 1.2rem;
+    color: #4a90e2;
+    cursor: pointer;
+  }
+  #prevBtn {
+    left: -40px;
+  }
+  #nextBtn {
+    right: -40px;
+  }
+  /* Popup image styling */
+  .popup-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
